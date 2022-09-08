@@ -1,19 +1,46 @@
 body {
   font-family: "Ubuntu", sans-serif;
 }
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
+/* main part css  */
+.course_heading {
+  width: 40%;
 }
-.carousel-caption {
-  bottom: 200px;
-}
-.carousel-caption h5 {
+.course_heading h2 {
   font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
 }
-.carousel-caption p {
-  font-size: 1.1rem;
+.course_heading p {
+  font-size: 0.9rem;
+  color: gray;
+}
+.course_img {
+  width: 100%;
+}
+/* tablet device  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /* heading part css  */
+
+  /* main part css  */
+  .course_heading {
+    width: 100%;
+  }
+  .course_heading p {
+    font-size: 1.2rem;
+  }
+}
+/* Mobile Devices  */
+@media only screen and (max-width: 688px) {
+  /* heading part css  */
+  .carousel-caption {
+  }
+
+  /* main part css  */
+  .course_heading {
+    width: 80%;
+  }
+  .course_heading h2 {
+    font-size: 1.5rem;
+  }
+  .course_heading p {
+    font-size: 1.2rem;
+  }
 }
